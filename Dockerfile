@@ -15,5 +15,5 @@ RUN mv /app/build/libs/*.jar /app/app.jar
 
 # 컨테이너 실행 시 Spring Boot의 'prod' 프로필을 활성화하고,
 # 빌드된 JAR 파일을 직접 실행합니다.
-ENTRYPOINT ["java", "-jar", "-Dspring.profiles.active=prod", "app.jar"]
+ENTRYPOINT ["java", "-jar", "-Dspring.profiles.active=dev", "app.jar"]
 
